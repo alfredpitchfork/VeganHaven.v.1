@@ -1,0 +1,59 @@
+@import 'config';
+
+.nav {
+  display: flex;
+  width: 100%;
+  height: 10rem;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  width: 100%;
+  font-size: 1rem;
+  background: #090909;
+
+  .logo {
+    font-family: $HeaderFont;
+    font-size: 2.5rem;
+    @include transition-ease;
+
+    span {
+      color: rgb(90, 90, 90);
+      @include transition-ease;
+    }
+    &:hover {
+      color: $primaryColor;
+      fill: white;
+      span {
+        color: $primaryColor;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      a {
+        font-family: $ParagraphFont;
+        text-decoration: none;
+        color: white;
+        @include transition-ease;
+
+        &:hover {
+          color: $primaryColor;
+          font-size: 1.5rem;
+          padding: 10px 6rem;
+        }
+      }
+      border-right: 2px solid white;
+      padding: 10px 2rem;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+}

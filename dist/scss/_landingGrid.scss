@@ -1,0 +1,128 @@
+.main_home {
+  display: grid;
+  height: 90vh;
+  width: 100vw;
+
+  grid-template-columns: 1.3fr 0.3fr 0.7fr 2.5fr;
+  grid-template-rows: 1.3fr 0.7fr 1.4fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  .div1 {
+    grid-area: 1 / 1 / 2 / 4;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-areas: 'imgdiv1 textdiv1';
+    grid-template-columns: 1fr 1fr;
+
+    .imgdiv1 {
+      box-sizing: border-box;
+      grid-area: imgdiv1;
+      background: $img1;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      margin-bottom: 5px;
+    }
+
+    .textdiv1 {
+      font-family: $HeaderFont;
+      background: #e9e9e9;
+      grid-area: textdiv1;
+      margin-bottom: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: center;
+      line-height: 4rem;
+      font-size: 1.6rem;
+      h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 4.7rem;
+        font-weight: 200;
+      }
+      h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 5.5rem;
+      }
+    }
+  }
+
+  .div2 {
+    grid-area: 1 / 4 / 2 / 5;
+    .imgdiv2 {
+      width: 100%;
+      height: 100%;
+      background: $img2;
+      background-size: cover;
+      background-position: right bottom;
+      background-repeat: no-repeat;
+      margin-bottom: 5px;
+    }
+    .textdiv2 {
+      display: none;
+    }
+  }
+
+  .div3 {
+    grid-area: 3 / 1 / 4 / 3;
+    .imgdiv3 {
+      height: 100%;
+      width: 100%;
+      background: $img3;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      overflow: hidden;
+    }
+    .textdiv3 {
+      display: none;
+    }
+  }
+
+  .div4 {
+    grid-area: 2 / 3 / 4 / 5;
+    height: 100%;
+    width: 100%;
+    .imgdiv4 {
+      background: $img4;
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      max-width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    .textdiv4 {
+      display: none;
+    }
+  }
+
+  .div5 {
+    grid-area: 2 / 1 / 3 / 3;
+    height: 100%;
+    width: 100%;
+    .imgdiv5 {
+      background: $img5;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    .textdiv5 {
+      display: none;
+    }
+  }
+}
+
+.div6,
+.div7,
+.div8 {
+  display: none;
+}
